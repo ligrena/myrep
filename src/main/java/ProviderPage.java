@@ -25,7 +25,7 @@ public class ProviderPage extends PageObject {
     @FindBy(css = "h2[class=\"ui-button__text\"]")
     private WebElement btmsubmit;
 
-    @FindBy(css = "div[class=\"ui-form-field-error-message ui-form-field-error-message_ui-form\"]")
+    @FindBy(xpath = "//span/form//div[text()=\"Поле обязательное\"]")
     public WebElement error;
 
     @FindBy(xpath = "//div[text()=\"Поле неправильно заполнено\"]")
@@ -34,10 +34,10 @@ public class ProviderPage extends PageObject {
     @FindBy(xpath = "//div[text()=\"Поле заполнено некорректно\"]")
     private WebElement erorrMessage1;
 
-    @FindBy(xpath = "//div[text()=\"Минимальная сумма перевода - 10 \u20BD\"]")
+    @FindBy(xpath = "//span/form//div[text()=\"Минимальная сумма перевода - 10 \u20BD\"]")
     private WebElement errorMessage3;
 
-    @FindBy(css = "div.ui-page-frame__content a:nth-of-type(1)[href=\"/zhku-moskva/\"]")
+    @FindBy(xpath = "//*[@id=\"search-and-pay-container\"]//div[text()=\"ЖКУ-Москва\"]")
     public WebElement checkPage;
 
     public void errorMessage(){

@@ -19,7 +19,7 @@ public class ServicePayments extends PageObject {
     @FindBy(css = "a[href=\"/zhku-moskva/\"]")
     private WebElement provider;
 
-    @FindBy(css = "a[href=\"/payments/provider-gorvodokanalnovosi-9/\"]")
+    @FindBy(xpath = "//span/section//a/span[text()=\"ГОРВОДОКАНАЛ (НОВОСИБИРСК)\"]")
     public WebElement checkRegion;
 
     @FindBy(css = "span a span div span")
