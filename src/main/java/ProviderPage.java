@@ -7,7 +7,7 @@ public class ProviderPage extends PageObject {
     @FindBy(xpath = "//div//span/section/ul/li[1]/span[2]/a/span")
     public WebElement service;
 
-    @FindBy(css = "a[href=\"/zhku-moskva/oplata/\"] span")
+    @FindBy(xpath = "//div/a/span[text()=\"Оплатить ЖКУ в Москве\"]")
     private WebElement providerOplata;
 
     @FindBy(css = "label div.ui-input__column input[id=\"payerCode\"]")

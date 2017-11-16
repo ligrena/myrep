@@ -16,7 +16,7 @@ public class ServicePayments extends PageObject {
     @FindBy(css = "div.ui-regions__layout div span")
     private WebElement city;
 
-    @FindBy(css = "a[href=\"/zhku-moskva/\"]")
+    @FindBy(xpath = "//div//a/span[text()=\"ЖКУ-Москва\"]\n")
     private WebElement provider;
 
     @FindBy(xpath = "//span/section//a/span[text()=\"ГОРВОДОКАНАЛ (НОВОСИБИРСК)\"]")
